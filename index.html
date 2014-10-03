@@ -5,7 +5,6 @@
   <link rel='stylesheet' href="styles/styles.css">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/maps.js"></script>
-  <script type="text/javascript" src="scripts/coords.js"></script>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <script type="text/javascript"
@@ -14,8 +13,10 @@
 <script type="text/javascript">google.maps.event.addDomListener(window, 'load', initialize);</script>
 </head>
 <body>
+  <h1>Where in the world is the ISS?</h1>
   <div id="map-canvas"></div>
   <!-- loading some scripts later for better UX -->
+  <script type="text/javascript" src="scripts/coords.js"></script>
   <script src="https://www.rdio.com/api/api.js?client_id=aGKbwkdLH1uxgN6RdQqENg"></script>
   <script src="scripts/rdio.js"></script>
 </body>

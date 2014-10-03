@@ -1,11 +1,21 @@
 html, body {
         height: 100%;
         margin: 0px;
-        padding: 0px
+        padding: 0px;
+        overflow:hidden;
+        background: url('../images/space.jpg');
 }
 
 #map-canvas {
 	height: 600px;
 	width: 70%;
-	margin: 20% auto;
+	margin: 5% auto;
+}
+
+h1 {
+	font-family: arial;
+	text-align: center;
+	margin-top: 90px;
+	font-weight: bold;
+	color: #ecf0f1;
 }
