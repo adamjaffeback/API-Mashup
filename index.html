@@ -1,14 +1,43 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Where is the ISS Now?</title>
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-</head>
-<body>
-  <h1>Where is the International Space Station?</h1>
-  <img src="http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
-&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
-&markers=color:red%7Clabel:C%7C40.718217,-73.998284"/>
-</body>
+  <head>
+    <title>Localizing the Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&language=en"></script>
+    <script>
+function initialize() {
+   var allowedBounds = new google.maps.LatLngBounds(
+    new google.maps.LatLng(85, -180),           // top left corner of map
+new google.maps.LatLng(-85, 180)            // bottom right corner
+  );
+
+
+ var swt =allowedBounds .getSouthWest().lng();
+var nor = allowedBounds .getNorthEast().lat();
+var k = 5.0; 
+var n = allowedBounds .getNorthEast().lat() - k; 
+var e = allowedBounds .getNorthEast().lng() - k; 
+var s = allowedBounds .getSouthWest().lat() + k; 
+var w = allowedBounds .getSouthWest().lng() + k; 
+var neNew = new google.maps.LatLng( n, e ); 
+var swNew = new google.maps.LatLng( s, w ); 
+boundsNew = new google.maps.LatLngBounds( swNew, neNew ); 
+map .fitBounds(boundsNew);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
 </html>
