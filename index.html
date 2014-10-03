@@ -1,18 +1,20 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Where is the ISS Now?</title>
+  <link rel='stylesheet' href="styles/styles.css">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/maps.js"></script>
-
-
+  <script type="text/javascript" src="scripts/coords.js"></script>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChXWfRmbazw15EugcZL0-PIkVzRlgL8Y8">
+</script>
+<script type="text/javascript">google.maps.event.addDomListener(window, 'load', initialize);</script>
 </head>
 <body>
-  <h1>Where is the International Space Station?</h1>
-  <img src="http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
-&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
-&markers=color:red%7Clabel:C%7C40.718217,-73.998284"/>
-
+  <div id="map-canvas"></div>
   <!-- loading some scripts later for better UX -->
   <script src="https://www.rdio.com/api/api.js?client_id=aGKbwkdLH1uxgN6RdQqENg"></script>
   <script src="scripts/rdio.js"></script>
