@@ -9,7 +9,14 @@ $(document).ready(function(){
         //$('.lat').append('<p>lat: '+data.iss_position.latitude+'</p>').css('font-family', 'Helvetica').css('font-size', '80px').css('text-align', 'center');
         var lat = data.iss_position.latitude;
         var long = data.iss_position.longitude;
-        updateMarker(lat, long);
+        // updateMarker(lat, long);
+
+        new google.maps.Marker({
+          position: new google.maps.LatLng(lat, long),
+          map: map,
+          title: 'ISS'
+        });
+
         console.log(data.iss_position.longitude);
         console.log(data.iss_position.latitude);
       }
