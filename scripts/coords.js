@@ -17,6 +17,10 @@ $(document).ready(function(){
           title: 'ISS'
         });
 
+        var myLatLng = new google.maps.LatLng(lat, long);
+
+        map.panTo(myLatLng);
+
         console.log(data.iss_position.longitude);
         console.log(data.iss_position.latitude);
       }
