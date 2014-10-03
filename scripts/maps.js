@@ -17,6 +17,6 @@ var marker = new google.maps.Marker({
 });
 }
 
-var updateMarker = function(lat, lon) {
+var updateMarker = function(lat, long) {
   marker.setPosition(new google.maps.LatLng(lat,long));
 };
