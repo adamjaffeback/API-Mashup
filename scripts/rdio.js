@@ -5,6 +5,12 @@ R.ready(function() {
   R.player.play({source: "p11449081", index: i});
   R.player.shuffle();
 
+  R.player.on("change:playingTrack", function(track) {
+    $('.artist').text('Artist: ' + track.get('artist'));
+    $('.title').text('Title: ' + track.get('name'));
+    $('.album').text('Album: ' + track.get('album'));
+  });
+
   // R.request({
   //   method: 'search',
   //   content: {
