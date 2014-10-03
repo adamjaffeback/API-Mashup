@@ -10,7 +10,35 @@ html, body {
 	height: 600px;
 	width: 70%;
 	margin: 5% auto;
+	 box-shadow: 0 0 3px #515151;
+    -webkit-animation: pulse 4s infinite; /* Safari 4+ */
+    -moz-animation:    pulse 4s infinite; /* Fx 5+ */
+    -o-animation:      pulse 4s infinite; /* Opera 12+ */
+    animation:         pulse 4s infinite; /* IE 10+ */
+
 }
+
+@-webkit-keyframes pulse {
+  0%   { box-shadow: 0 0 3px #515151; }
+  50% { box-shadow: 0 0 100px #ccc; }
+  100% { box-shadow: 0 0 3px #515151; }
+}
+@-moz-keyframes pulse {
+  0%   { box-shadow: 0 0 3px #515151; }
+  50% { box-shadow: 0 0 100px #ccc; }
+  100% { box-shadow: 0 0 3px #515151; }
+}
+@-o-keyframes pulse {
+  0%   { box-shadow: 0 0 3px #515151; }
+  50% { box-shadow: 0 0 100px #ccc; }
+  100% { box-shadow: 0 0 3px #515151; }
+}
+@keyframes pulse {
+  0%   { box-shadow: 0 0 3px #515151; }
+  50% { box-shadow: 0 0 100px #ccc; }
+  100% { box-shadow: 0 0 3px #515151; }
+}
+
 
 h1 {
 	font-family: 'Nunito', sans-serif;
