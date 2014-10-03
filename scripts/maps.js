@@ -2,7 +2,7 @@ var map;
 
 function initialize() {
   	var mapOptions = {
-    	zoom: 5,
+    	zoom: 6,
     	center: new google.maps.LatLng(20, 0)
   	};
   

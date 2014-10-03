@@ -1,11 +1,17 @@
 html, body {
         height: 100%;
         margin: 0px;
-        padding: 0px
+        padding: 0px;
+        overflow:hidden;
 }
 
 #map-canvas {
 	height: 600px;
 	width: 70%;
-	margin: 20% auto;
+	margin: 5% auto;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20px;
 }
