@@ -14,5 +14,5 @@ function initialize() {
 }
 
 var updateMarker = function(lat, long) {
-  marker.setPosition(new google.maps.LatLng(lat,long));
+  marker.setPosition(google.maps.LatLng(lat,long));
 };
