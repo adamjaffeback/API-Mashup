@@ -13,9 +13,11 @@ html, body {
 }
 
 h1 {
-	font-family: arial;
+	font-family: 'Nunito', sans-serif;
+	font-size: 60px;
 	text-align: center;
-	margin-top: 90px;
+	margin-top: 50px;
 	font-weight: bold;
 	color: #ecf0f1;
+	margin-bottom: 10px;
 }
