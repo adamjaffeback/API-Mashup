@@ -10,11 +10,12 @@ $(document).ready(function(){
         var lat = data.iss_position.latitude;
         var long = data.iss_position.longitude;
         // updateMarker(lat, long);
-
+        var image = "../API-mashup/images/dot.png";
         new google.maps.Marker({
           position: new google.maps.LatLng(lat, long),
           map: map,
-          title: 'ISS'
+          title: 'ISS',
+          icon: image
         });
 
         var myLatLng = new google.maps.LatLng(lat, long);
