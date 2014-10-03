@@ -1,4 +1,7 @@
 html, body {
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	color: #ecf0f1;
         height: 100%;
         margin: 0px;
         padding: 0px;
@@ -13,11 +16,8 @@ html, body {
 }
 
 h1 {
-	font-family: 'Nunito', sans-serif;
 	font-size: 60px;
-	text-align: center;
 	margin-top: 50px;
 	font-weight: bold;
-	color: #ecf0f1;
 	margin-bottom: 10px;
 }
