@@ -10,7 +10,7 @@ $(document).ready(function(){
         var lat = data.iss_position.latitude;
         var long = data.iss_position.longitude;
         // updateMarker(lat, long);
-        var image = "../images/dot.png";
+        var image = "images/dot.png";
         new google.maps.Marker({
           position: new google.maps.LatLng(lat, long),
           map: map,
