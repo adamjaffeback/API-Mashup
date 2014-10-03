@@ -1,7 +1,3 @@
-
-var latitude = 20;
-var longitude = 0;
-
 var map;
 
 function initialize() {
@@ -16,8 +12,13 @@ function initialize() {
 
 //create marker
 var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(latitude, longitude),
+        position: new google.maps.LatLng(20, 0),
         map: map,
         title: 'ISS'
 });
-      }
+}
+
+var updateMarker = function(lat, lon) {
+  marker.setPosition(new google.maps.LatLng(lat,long));
+};
+
