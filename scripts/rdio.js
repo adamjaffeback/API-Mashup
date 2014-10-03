@@ -1,24 +1,31 @@
 R.ready(function() {
-  R.request({
-    method: 'search',
-    content: {
-      types: 'Track',
-      query: 'space'
-    },
-    success: function(result) {
-      var tracks = result.result.results;
+  // play existing space playlist
+  // hardcoded max playlist size
+  var i = Math.floor(Math.random()*3);
+  R.player.play({source: "p11449081", index: i});
+  R.player.shuffle();
+
+  // R.request({
+  //   method: 'search',
+  //   content: {
+  //     types: 'Track',
+  //     query: 'space'
+  //   },
+  //   success: function(result) {
+  //     var tracks = result.result.results;
 
       // play one song:
-      var numTracks = tracks.length;
-      var rand = Math.floor(Math.random()*numTracks);
-      var track = tracks[rand];
-      var key = track.key;
-      R.player.play({source: key});
+      // var numTracks = tracks.length;
+      // var rand = Math.floor(Math.random()*numTracks);
+      // var track = tracks[rand];
+      // var key = track.key;
+      // R.player.play({source: key});
 
-      // play several songs. Can't do from localhost?
+
+      // save playlist. Can't do from localhost?
       // savePlaylist(tracks);
-    }
-  });
+    // }
+  // });
 });
 
 
