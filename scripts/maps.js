@@ -9,12 +9,8 @@ function initialize() {
   	map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
-//create marker
-var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(20, 0),
-        map: map,
-        title: 'ISS'
-});
+ map = new google.maps.Map(document.getElementById('map-canvas'),
+  mapOptions);
 }
 
 var updateMarker = function(lat, long) {
