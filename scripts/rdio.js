@@ -11,28 +11,28 @@ R.ready(function() {
     $('.album').text('Album: ' + track.get('album'));
   });
 
-  R.request({
-    method: 'search',
-    content: {
-      types: 'Track',
-      query: 'space'
-    },
-    success: function(result) {
-      var tracks = result.result.results;
+//   R.request({
+//     method: 'search',
+//     content: {
+//       types: 'Track',
+//       query: 'space'
+//     },
+//     success: function(result) {
+//       var tracks = result.result.results;
 
-      // play one song:
-      var numTracks = tracks.length;
-      var rand = Math.floor(Math.random()*numTracks);
-      var track = tracks[rand];
-      var key = track.key;
-      R.player.play({source: key});
+//       // play one song:
+//       var numTracks = tracks.length;
+//       var rand = Math.floor(Math.random()*numTracks);
+//       var track = tracks[rand];
+//       var key = track.key;
+//       R.player.play({source: key});
 
 
-      // save playlist. Can't do from localhost?
-      savePlaylist(tracks);
-    }
-  });
-});
+//       // save playlist. Can't do from localhost?
+//       savePlaylist(tracks);
+//     }
+//   });
+// });
 
 
 var savePlaylist = function(tracks) {
