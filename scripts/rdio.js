@@ -20,7 +20,7 @@ R.ready(function() {
     success: function(result) {
       var tracks = result.result.results;
 
-      play one song:
+      // play one song:
       var numTracks = tracks.length;
       var rand = Math.floor(Math.random()*numTracks);
       var track = tracks[rand];
@@ -28,7 +28,7 @@ R.ready(function() {
       R.player.play({source: key});
 
 
-      save playlist. Can't do from localhost?
+      // save playlist. Can't do from localhost?
       savePlaylist(tracks);
     }
   });
