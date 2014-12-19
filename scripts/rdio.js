@@ -32,7 +32,7 @@ R.ready(function() {
 //       savePlaylist(tracks);
 //     }
 //   });
-// });
+});
 
 
 var savePlaylist = function(tracks) {
