@@ -15,8 +15,13 @@ A real-time Google map showing the location of the International Space Station o
 
 Team
 ------
-Adam Back (adam-back)
-Jeff Gladchun (jgladch)
-Kevin Meurer (kmeurer)
-Greg Ferrell (gregerg)
+* Adam Back (adam-back)
+* Jeff Gladchun (jgladch)
+* Kevin Meurer (kmeurer)
+* Greg Ferrell (gregerg)
 
+Run Locally
+----------
+1. Clone the repo localy.
+1. Run `bower install` from the main directory .
+1. Open `index.html` in your browser.
