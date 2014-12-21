@@ -3,6 +3,8 @@ API-Mashup
 
 Hackathon Prompt: In two hours, mash two (or more) APIs together to create something interesting.
 
+Visit: rocketman.azurewebsites.net
+
 The APIs
 --------
 * International Space Station
